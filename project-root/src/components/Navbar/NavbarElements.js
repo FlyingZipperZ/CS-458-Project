@@ -125,6 +125,6 @@ export const NavBtnLink = styled(LinkR)`
 
 export const CompanySlogan = styled.div`
   font-size: 24px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   text-align: center;
 `
