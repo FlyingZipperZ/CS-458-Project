@@ -6,11 +6,10 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
-    height: 800px;
+    /* padding: 0 30px; */
+    height: 1000px;
     position: relative;
     z-index: 1;
-    margin-bottom: 100px;
 
     :before {
         content: '';
@@ -54,8 +53,6 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 33px;
-    padding-top: 33px;
-    padding-bottom: 20px;
 `
 
 export const HeroH1 = styled.div`
@@ -72,7 +69,6 @@ export const HeroH1 = styled.div`
     }
 `
 export const HeroP = styled.p`
-    margin-top: 24px;
     color: #fff;
     font-size: 24px;
     text-align: justify;
@@ -88,7 +84,6 @@ export const HeroP = styled.p`
 `
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +124,6 @@ export const ServicesContainer = styled.div`
     align-items: center;
     position: absolute;
     z-index: 2;
-    margin-top: 133px;
 
     @media screen and (max-width: 768px){
         height: 1100px;
@@ -171,6 +165,7 @@ export const ServicesCard = styled.div`
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
     color: #000;
+    margin-right: 150px;
 
     &:hover {
         transform: scale(1.1);
