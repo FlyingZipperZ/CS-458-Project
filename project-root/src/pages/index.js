@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
+import Footer from '../../src/components/Footer'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,6 +14,7 @@ const Home = () => {
     <>
       <Navbar toggle={toggle}/>
       <HeroSection />
+      <Footer />
     </>
   )
 }

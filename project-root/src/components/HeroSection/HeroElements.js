@@ -10,6 +10,7 @@ export const HeroContainer = styled.div`
     height: 800px;
     position: relative;
     z-index: 1;
+    margin-bottom: 100px;
 
     :before {
         content: '';
@@ -74,7 +75,7 @@ export const HeroP = styled.p`
     margin-top: 24px;
     color: #fff;
     font-size: 24px;
-    text-align: center;
+    text-align: justify;
     max-width: 600px;
 
     @media screen and (max-width: 768px) {
@@ -181,7 +182,7 @@ export const ServicesCard = styled.div`
 export const ServicesIcon = styled.img`
     height: 320px;
     width: 320px;
-    margin-bottom: 64px;
+    margin-bottom: 12px;
 ` 
 
 export const ServicesH1 = styled.h1`
@@ -205,5 +206,6 @@ export const ServicesH2 = styled.h2`
 
 export const ServicesP = styled.p`
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
+
 `
