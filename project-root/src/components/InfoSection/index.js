@@ -12,18 +12,16 @@ Subtitle,
 BtnWrap,
 Column2,
 ImgWrap,
-Img } from './InfoElements'
-//import Image1 from '../../images/svg-1.svg'
-//import { homeObjOne } from './Data'
+InfoBg,
+ImageBg,
+ } from './InfoElements'
+import testingBg from '../../images/testing-room-bg.jpg'
 
 import { useState } from 'react';
 import styled, { css } from 'styled-components';
 
 import { ReactComponent as ChevronLeft } from './assets/chevron-left.svg';
 import { ReactComponent as ChevronRight } from './assets/chevron-right.svg';
-import data from './Data2';
-
-// const View = () => <Slideshow items={data} />;
 
 const Slideshow = (props) => {
   const [{ items, activeIndex }, setState] = useState({
@@ -47,7 +45,7 @@ const Slideshow = (props) => {
   };
 
   return (
-    <SlideWrapper>
+    <SlideWrapper style={{ border: '1px solid #000', borderRadius: '50%'}}>
       <ImageBox>
         <img alt={items[activeIndex].caption} src={items[activeIndex].image} />
         <NavButton position="left" onClick={moveTo(activeIndex - 1)}>
@@ -71,10 +69,13 @@ const Slideshow = (props) => {
   );
 };
 
-const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, buttonName, to}) => {
+const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, buttonName, to, items}) => {
   return (
     <>
       <InfoContainer id={id}>
+        <InfoBg>
+          <ImageBg src={testingBg} type='image/jpg'></ImageBg>
+        </InfoBg>
         <InfoWrapper>
             <InfoRow imgStart={imgStart}>
                 <Column1>
@@ -97,7 +98,7 @@ const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, bu
                 </Column1>
                 <Column2>
                     <ImgWrap>
-                      <Slideshow items={data}/>
+                      <Slideshow items={items}/>
                     </ImgWrap>
                 </Column2>
             </InfoRow>
@@ -159,9 +160,11 @@ const ImageCaption = styled.span`
 
 const ImageBox = styled.div`
   position: relative;
-  background-color: #343434;
+  background-color: #fff;
   width: 100%;
   height: 85%;
+  border: 1px solid black;
+  border-radius: 33px;
   img {
     position: absolute;
     margin: auto;
@@ -178,6 +181,9 @@ const SlideWrapper = styled.div`
   position: relative;
   width: 500px;
   height: 500px;
+  margin-top: 66px;
+  border: 1px solid black;
+  border-radius: 50%;
 `;
 
 

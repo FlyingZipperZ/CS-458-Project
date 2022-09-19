@@ -6,6 +6,7 @@ export const InfoContainer = styled.div`
     height: 900px;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -51,10 +52,10 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
+    color: white;
 `
 
 export const TopLine = styled.p`
-    color: #000;
     font-size: 24px;
     line-height: 16px;
     font-weight: 700;
@@ -68,7 +69,6 @@ export const Heading = styled.h1`
     font-size: 20px;
     line-height: 1.1;
     font-weight: 75;
-    color: #000;
     margin-bottom: 50px;
 
     @media screen and (max-width: 480px) {
@@ -81,7 +81,6 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: auto;
-    color: #000;
     padding: 5px;
 `
 
@@ -100,4 +99,23 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0; 
     
+`
+
+export const InfoBg = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+`
+
+export const ImageBg = styled.img`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover; 
+    object-fit: cover;
+    background: #fff; 
 `

@@ -1,23 +1,23 @@
-import rurikoTemple from './assets/testing1.jpg';
-import itsukushimaShrine from './assets/testing2.jpg';
-import tokyo from './assets/testing3.jpg';
-import comicScene from './assets/testing4.jpg';
+import testing1 from './assets/testing1.jpg';
+import testing2 from './assets/testing2.jpg';
+import testing3 from './assets/testing3.jpg';
+import testing4 from './assets/testing4.jpg';
 
 const slideItems = [
   {
-    image: itsukushimaShrine,
+    image: testing2,
     caption: '',
   },
   {
-    image: tokyo,
+    image: testing3,
     caption: '',
   },
   {
-    image: comicScene,
+    image: testing4,
     caption: '',
   },
   {
-    image: rurikoTemple,
+    image: testing1,
     caption: '',
   },
 ];

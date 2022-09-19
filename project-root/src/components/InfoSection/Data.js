@@ -2,6 +2,10 @@ import img1 from '../../images/widget1.jpg'
 import img2 from '../../images/widget1.jpg'
 import HHD from '../../images/widget1.jpg'
 import RP from '../../images/widget1.jpg'
+import testing1 from './assets/testing1.jpg';
+import testing2 from './assets/testing2.jpg';
+import testing3 from './assets/testing3.jpg';
+import testing4 from './assets/testing4.jpg';
 
 export const homeObjOne = 
 {
@@ -13,20 +17,55 @@ export const homeObjOne =
     imgStart: true,
     img: HHD,
     buttonName: 'Learn More',
-    to: 'services'   
+    to: 'services',
+    items: [
+  {
+    image: testing2,
+    caption: '',
+  },
+  {
+    image: testing3,
+    caption: '',
+  },
+  {
+    image: testing4,
+    caption: '',
+  },
+  {
+    image: testing1,
+    caption: '',
+  }, ]
 }
+
 
 export const homeObjTwo = 
 {
-    id: 'discover',
-    topLine: 'Create your dream',
+    id: 'heritage',
+    topLine: 'Hello',
     headLine: 'We offer technology that connects you with people that can help you create your dream music!',
     description: 'Sync is made for artists',
     alt: 'link',
     imgStart: false,
     img: RP,
     buttonName: 'Register',
-    to: 'home'
+    to: 'home',
+    items: [
+        {
+          image: testing2,
+          caption: '',
+        },
+        {
+          image: testing3,
+          caption: '',
+        },
+        {
+          image: testing4,
+          caption: '',
+        },
+        {
+          image: testing1,
+          caption: '',
+        }, ]
 }
 
 
