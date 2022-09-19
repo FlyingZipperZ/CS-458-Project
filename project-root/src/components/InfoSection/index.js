@@ -45,7 +45,7 @@ const Slideshow = (props) => {
   };
 
   return (
-    <SlideWrapper style={{ border: '1px solid #000', borderRadius: '50%'}}>
+    <SlideWrapper>
       <ImageBox>
         <img alt={items[activeIndex].caption} src={items[activeIndex].image} />
         <NavButton position="left" onClick={moveTo(activeIndex - 1)}>
@@ -160,11 +160,12 @@ const ImageCaption = styled.span`
 
 const ImageBox = styled.div`
   position: relative;
-  background-color: #fff;
+  background-color: transparent;
   width: 100%;
   height: 85%;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 33px;
+
   img {
     position: absolute;
     margin: auto;
@@ -182,8 +183,6 @@ const SlideWrapper = styled.div`
   width: 500px;
   height: 500px;
   margin-top: 66px;
-  border: 1px solid black;
-  border-radius: 50%;
 `;
 
 

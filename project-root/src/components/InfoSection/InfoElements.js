@@ -7,6 +7,7 @@ export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
+    
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -23,7 +24,7 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
-    margin-top: -166px;
+    margin-top: -100px;
 `
 
 export const InfoRow = styled.div`

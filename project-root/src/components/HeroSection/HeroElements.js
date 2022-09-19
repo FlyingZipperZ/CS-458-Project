@@ -200,7 +200,9 @@ export const ServicesH2 = styled.h2`
 `
 
 export const ServicesP = styled.p`
-    font-size: 1rem;
+    font-size: 18px;
     text-align: left;
-
+    color: white;
+    margin-left: 66px;
+    margin-right: 66px;
 `

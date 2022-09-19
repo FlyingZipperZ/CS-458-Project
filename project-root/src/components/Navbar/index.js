@@ -42,7 +42,7 @@ const Navbar = ({ toggle }) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='products' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLinks to='products' smooth={true} duration={500} spy={true} exact='true' offset={-82}>
                             Products
                         </NavLinks>
                     </NavItem>
