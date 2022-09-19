@@ -118,3 +118,9 @@ export const NavBtnLink = styled(LinkR)`
     color: #FF5349;
   }
 `
+
+export const CompanySlogan = styled.div`
+  font-size: 24px;
+  margin: 33px;
+  text-align: center;
+`

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { FaBars } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, CompanySlogan} from './NavbarElements'
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
 //import Login from '../auth/Login/Login'
@@ -28,6 +28,9 @@ const Navbar = ({ toggle }) => {
 
     return (
     <>
+    <CompanySlogan>
+        A Heritage of Solving Problems Others Couldn't.
+    </CompanySlogan>
     <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
