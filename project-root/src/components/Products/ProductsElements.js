@@ -8,7 +8,7 @@ export const ServicesContainer = styled.div`
     justify-content: center;
     align-items: center;
     /* background: #fffff0; */
-    margin-bottom: -200px;
+    /* margin-bottom: -200px; */
     background-image: url("http://www.svmagnetics.com/templates/scottsvalleymagnetics/images/magnetic-field-bg.jpg");
 
     @media screen and (max-width: 768px){
