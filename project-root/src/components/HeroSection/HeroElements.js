@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0 30px; */
+    padding: 0 30px;
     height: 1000px;
     position: relative;
     z-index: 1;
@@ -154,7 +154,7 @@ export const ServicesWrapper = styled.div`
 `
 
 export const ServicesCard = styled.div`
-    background: gray;
+    background: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -164,7 +164,7 @@ export const ServicesCard = styled.div`
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-    color: #000;
+    color: #fff;
     margin-right: 150px;
 
     &:hover {
