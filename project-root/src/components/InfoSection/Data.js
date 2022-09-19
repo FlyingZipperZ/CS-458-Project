@@ -25,7 +25,7 @@ export const homeObjOne =
     imgStart: true,
     img: HHD,
     buttonName: 'Learn More',
-    to: 'services',
+    to: 'heritage',
     items: [
         {
           image: testing2,
@@ -50,13 +50,13 @@ export const homeObjTwo =
 {
     id: 'heritage',
     topLine: 'Our heritage',
-    headLine: 'SVM has a heritage of four decades of quality manufacturing and engineering solutions. Slide the scrollbar below to view some of our important milestones.',
+    headLine: 'SVM has a heritage of four decades of quality manufacturing and engineering solutions. Click through the slideshow to see some of our milestones.',
     description: '',
     alt: 'link',
     imgStart: false,
     img: RP,
     buttonName: 'Checkout our testimonials',
-    to: 'home',
+    to: 'testimonials',
     items: [
         {
           image: slide1,

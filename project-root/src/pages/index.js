@@ -5,6 +5,7 @@ import Footer from '../../src/components/Footer'
 import Products from '../components/Products'
 import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data'
+import Testimonials from '../components/Testimonials'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,6 +21,7 @@ const Home = () => {
       <Products />
       <InfoSection {...homeObjOne}/>
       <InfoSection {...homeObjTwo}/>
+      <Testimonials />
       <Footer />
     </>
   )
