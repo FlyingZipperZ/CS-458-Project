@@ -10,6 +10,8 @@ export const HeroContainer = styled.div`
     height: 1000px;
     position: relative;
     z-index: 1;
+    /* min-width: 300px;
+    margin: auto; */
 
     :before {
         content: '';
@@ -21,6 +23,15 @@ export const HeroContainer = styled.div`
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
         linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
+    }
+
+    @media screen and (max-width: 768px){
+        height: 1750px;
+        
+    }
+
+    @media screen and (max-width: 480px){
+        height: 1700px;
     }
 
 `
@@ -42,12 +53,22 @@ export const VideoBg = styled.video`
     -o-object-fit: cover; 
     object-fit: cover;
     background: #fff;
+
+    @media screen and (max-width: 768px){
+        height: 1550px;
+        
+    }
+
+    @media screen and (max-width: 480px){
+        height: 1600px;
+        
+    }
 `
 
 export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
-    position: absolute; 
+    /* position: relative;  */
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
@@ -122,7 +143,7 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     z-index: 2;
 
     @media screen and (max-width: 768px){
@@ -138,10 +159,12 @@ export const ServicesWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
+    z-index: 1;
+    /* width: fit-content; */
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -165,7 +188,7 @@ export const ServicesCard = styled.div`
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
     color: #fff;
-    margin-right: 150px;
+    margin: auto;
 
     &:hover {
         transform: scale(1.1);
@@ -205,4 +228,5 @@ export const ServicesP = styled.p`
     color: white;
     margin-left: 66px;
     margin-right: 66px;
+    width: 66%;
 `

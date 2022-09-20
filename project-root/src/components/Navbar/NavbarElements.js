@@ -15,6 +15,8 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
+    min-width: 300px;
+    margin: auto;
 
 @media screen and (max-width: 960) {
     transition: 0.8 all ease
@@ -127,4 +129,8 @@ export const CompanySlogan = styled.div`
   font-size: 24px;
   margin-bottom: 100px;
   text-align: center;
+  position: sticky;
+  z-index: 3;
+  min-width: 300px;
+  margin: auto;
 `

@@ -12,11 +12,11 @@ export const ServicesContainer = styled.div`
     background-image: url("http://www.svmagnetics.com/templates/scottsvalleymagnetics/images/magnetic-field-bg.jpg");
 
     @media screen and (max-width: 768px){
-        height: 1100px;
+        height: 3000px;
     }
 
     @media screen and (max-width: 480px){
-        height: 1300px;
+        height: 3200px;
     }
 `
 
