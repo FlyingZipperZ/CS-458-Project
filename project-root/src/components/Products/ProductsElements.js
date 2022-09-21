@@ -20,7 +20,7 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        height: 3200px;
+        height: 2800px;
     }
 `
 
@@ -40,6 +40,7 @@ export const ServicesWrapper = styled.div`
         grid-template-columns: 1fr;
         padding: 0 20px;
     } 
+
 `
 
 export const ServicesCard = styled.div`
@@ -60,21 +61,29 @@ export const ServicesCard = styled.div`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 480px){
+        width: 40%;
+    }
 `
 
 export const ServicesIcon = styled.img`
     height: 500px;
     width: 333px;
     margin-bottom: 16px;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 ` 
 
 export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 0px;
-    margin-top: -300px;
     padding: 50px 50px 50px 50px;
     border-radius: 33px;
+    margin-bottom: 100px;
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
@@ -92,6 +101,10 @@ export const ServicesDiv = styled.div`
     display: flex;
     flex-direction: column;
     cursor: pointer;
+
+    @media screen and (max-width: 480px){
+        width: 150%;
+    }
 `
 
 export const ServicesLinks = styled(LinkR)`
@@ -128,11 +141,20 @@ export const ElectroImageContainter = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     cursor: pointer;
+
+    @media screen and (max-width: 768px){
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 export const ElectroImage = styled.img`
     height: 75px;
     width: 133px;
     margin-bottom: 16px;
-    margin: 9px;
+    /* margin: 9px; */
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 `

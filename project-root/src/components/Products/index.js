@@ -47,7 +47,7 @@ const services = () => {
                 <ServicesH2>
                     Magnetics
                 </ServicesH2>
-                <ServicesP>
+                <ServicesP style={{textAlign: 'left'}}>
                     SVM offers a full range of services from design and prototype manufacturing, to full production for all types of magnetic components. From universal progressive-wound high-voltage transformers, to high-frequency resonators, SVM can provide the assembly to meet your requirements. Toroid inductors and transformers are our specialty, ranging from high-frequency output transformers to high-power filter inductors. Both thru-hole and surface mount designs are available.                
                 </ServicesP>
                 <ServicesIcon src={Icon2}/>

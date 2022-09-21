@@ -7,11 +7,11 @@ export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
+
 `
 // info or something
 export const InfoWrapper = styled.div`
@@ -24,7 +24,6 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
-    margin-top: -100px;
 `
 
 export const InfoRow = styled.div`
@@ -54,6 +53,10 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     color: white;
+
+    @media screen and (max-width: 480px){
+        width: 60%;
+    }
 `
 
 export const TopLine = styled.p`
