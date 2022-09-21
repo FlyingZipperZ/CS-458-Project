@@ -6,6 +6,7 @@ import Products from '../components/Products'
 import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data'
 import Testimonials from '../components/Testimonials'
+import Sidebar from '../components/Sidebar'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,6 +17,7 @@ const Home = () => {
 
   return (
     <>
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection />
       <Products />

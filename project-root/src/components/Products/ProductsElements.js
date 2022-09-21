@@ -75,7 +75,7 @@ export const ServicesCard = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        width: 40%;
+        width: 50%;
     }
 
 
@@ -117,7 +117,7 @@ export const ServicesDiv = styled.div`
     cursor: pointer;
 
     @media screen and (max-width: 480px){
-        width: 150%;
+        width: 130%;
     }
 `
 

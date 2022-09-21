@@ -7,7 +7,7 @@ import {animateScroll as scroll} from 'react-scroll'
 //import SignUp from '../auth/SignUp/SignUp'
 
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
     
     const changeNav = () => {
@@ -31,7 +31,7 @@ const Navbar = ({ toggle }) => {
     <CompanySlogan>
         A Heritage of Solving Problems Others Couldn't.
     </CompanySlogan>
-    <IconContext.Provider value={{ color: '#fff', width: '100%' }}>
+    <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                 <NavLogo to='/' onClick={toggleHome}>
@@ -57,12 +57,17 @@ const Navbar = ({ toggle }) => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
+                        <NavLinks to='facilities' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            Facilities
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
                         <NavLinks to='testimonials' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                             Testimonials
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='contact us' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLinks to='contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                             Contact Us
                         </NavLinks>
                     </NavItem>

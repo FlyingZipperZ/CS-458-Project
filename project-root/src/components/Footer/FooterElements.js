@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
     background-color: #101522;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
 `
 
 export const FooterWrap = styled.div`
@@ -12,7 +19,13 @@ export const FooterWrap = styled.div`
     justify-content: center;
     align-items: center;
     max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: 820px){
+        width: 90%;
+    }
+
 `
 
 export const FooterLinksContainer = styled.div`
@@ -25,17 +38,23 @@ export const FooterLinksContainer = styled.div`
 `
 
 export const FooterLinksWrapper = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    width: 100%;
 
     @media screen and (max-width: 820px){
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+        align-items: center;
     }
 `
 
 export const FooterLinkItems = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
     margin: 16px;
     text-align: left;
     width: 160px;
@@ -47,11 +66,16 @@ export const FooterLinkItems = styled.div`
         padding: 10px;
         width: 100%;
     }
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 `
 
 export const FooterLinkTitle = styled.h1`
     font-size: 14px;
     margin-bottom: 16px;
+
 `
 
 export const FooterLink = styled(Link)`
