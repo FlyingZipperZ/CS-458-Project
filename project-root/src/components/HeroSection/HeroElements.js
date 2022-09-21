@@ -90,7 +90,7 @@ export const HeroH1 = styled.div`
 `
 export const HeroP = styled.p`
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
     text-align: justify;
     max-width: 600px;
 
@@ -229,7 +229,7 @@ export const ServicesH2 = styled.h2`
 `
 
 export const ServicesP = styled.p`
-    font-size: 18px;
+    font-size: 24px;
     text-align: left;
     color: white;
     margin-left: 66px;

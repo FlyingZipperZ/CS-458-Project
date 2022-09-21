@@ -25,7 +25,7 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={MagneticBg} type='video/mp4' />
         </HeroBg>
         <ServicesContainer id='services'>
-        <div style={{color: 'white', fontSize: '24px', marginTop: '-300px', width: '77%', marginTop: 'auto'}}>
+        <div style={{color: 'white', fontSize: '32px', marginTop: '-300px', width: '77%', marginTop: 'auto'}}>
             Welcome to Scotts Valley Magnetics
         </div>
         <ServicesP>
@@ -34,7 +34,7 @@ const HeroSection = () => {
                     Our 15,000 Sq. Ft. facility, just minutes from the heart of Silicon Valley, provides both engineering and manufacturing at the same location. This establishes that all-important interface link between the sales, production, and technical staff.
 
                     Our technical and manufacturing staff, together with state-of-the-art test facilities, enables SVM to respond quickly and effectively to customer requirements. A corporate commitment to customer service and implementation of Just-In-Time (JIT) philosophies ensure timely deliveries to customer-required schedules.
-                </ServicesP>
+        </ServicesP>
         <ServicesWrapper>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
