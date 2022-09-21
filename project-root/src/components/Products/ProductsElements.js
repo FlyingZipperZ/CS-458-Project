@@ -49,6 +49,10 @@ export const ServicesWrapper = styled.div`
         grid-template-columns: 1fr 1fr;
     }
 
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr;
+    }
+
 `
 
 export const ServicesCard = styled.div`

@@ -10,7 +10,7 @@ export const InfoContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
-        height: 1200px;
+        height: 1100px;
     }
 
 `
@@ -54,19 +54,20 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     color: white;
-
-    @media screen and (max-width: 480px){
-        width: 60%;
-    }
 `
 
 export const TopLine = styled.p`
     font-size: 24px;
-    line-height: 16px;
+    line-height: auto;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 26px;
+        width: 80%;
+    }
 `
 
 export const Heading = styled.h1`
@@ -75,28 +76,41 @@ export const Heading = styled.h1`
     line-height: 1.1;
     font-weight: 75;
     margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
+        width: 80%;
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 26px;
+        font-size: 20px;
         width: 80%;
     }
 `
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
     font-size: 18px;
     line-height: auto;
     padding: 5px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        width: 80%;
+    }
 `
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+    margin-top: 60px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 26px;
+        width: 80%;
+    }
 `
 
 export const ImgWrap = styled.div`

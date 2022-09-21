@@ -11,15 +11,15 @@ export const ServicesContainer = styled.div`
     z-index: 0;
 
     @media screen and (max-width: 1000px){
-        height: 1900px;
+        height: 2500px;
     }
     
     @media screen and (max-width: 768px){
-        height: 2100px;
+        height: 1600px;
     }
 
     @media screen and (max-width: 480px){
-        height: 2300px;
+        height: 2500px;
     }
 `
 
@@ -73,7 +73,7 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 300px;
+    margin-bottom: 30px;
     z-index: 1;
     padding: 50px 50px 50px 50px;
     border-radius: 33px;

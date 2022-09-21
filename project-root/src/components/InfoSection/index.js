@@ -89,17 +89,17 @@ const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, bu
                     <Subtitle >
                         {description}
                     </Subtitle>
-                    <BtnWrap>
-                        <Button to={to} smooth='true' duration={500} spy='true' exact='true' offset={-80}>
-                          {buttonName}
-                        </Button>
-                    </BtnWrap>
                 </TextWrapper>
                 </Column1>
                 <Column2>
                     <ImgWrap>
                       <Slideshow items={items}/>
                     </ImgWrap>
+                    <BtnWrap>
+                        <Button to={to} smooth='true' duration={500} spy='true' exact='true' offset={-80}>
+                          {buttonName}
+                        </Button>
+                    </BtnWrap>
                 </Column2>
             </InfoRow>
         </InfoWrapper>
@@ -115,10 +115,6 @@ const ThumbnailList = styled.div`
   align-items: stretch;
   width: 100%;
   height: 15%;
-
-  @media screen and (max-width: 480px){
-    width: 10%;
-  }
 `;
 const Thumbnail = styled.div`
   cursor: pointer;
@@ -184,9 +180,13 @@ const ImageBox = styled.div`
 
 const SlideWrapper = styled.div`
   position: relative;
-  width: 500px;
+  width: 100%;
   height: 500px;
-  margin-top: 66px;
+
+  @media screen and (max-width: 768px) {
+        height: 275px;
+        width: 80%;
+    }
 `;
 
 
