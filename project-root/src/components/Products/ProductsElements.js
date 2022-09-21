@@ -11,6 +11,10 @@ export const ServicesContainer = styled.div`
     /* margin-bottom: -200px; */
     background-image: url("http://www.svmagnetics.com/templates/scottsvalleymagnetics/images/magnetic-field-bg.jpg");
 
+    @media screen and (max-width: 1200px){
+        height: 2200px;
+    }
+
     @media screen and (max-width: 1000px){
         height: 2200px;
     }
@@ -41,6 +45,10 @@ export const ServicesWrapper = styled.div`
         padding: 0 20px;
     } 
 
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
 `
 
 export const ServicesCard = styled.div`
@@ -65,6 +73,8 @@ export const ServicesCard = styled.div`
     @media screen and (max-width: 480px){
         width: 40%;
     }
+
+
 `
 
 export const ServicesIcon = styled.img`

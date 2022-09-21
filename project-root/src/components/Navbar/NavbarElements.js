@@ -134,4 +134,5 @@ export const CompanySlogan = styled.div`
   z-index: 3;
   min-width: 300px;
   margin: auto;
+  color: white;
 `

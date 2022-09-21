@@ -115,6 +115,10 @@ const ThumbnailList = styled.div`
   align-items: stretch;
   width: 100%;
   height: 15%;
+
+  @media screen and (max-width: 480px){
+    width: 10%;
+  }
 `;
 const Thumbnail = styled.div`
   cursor: pointer;

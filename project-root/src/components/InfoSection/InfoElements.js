@@ -10,6 +10,7 @@ export const InfoContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        height: 1200px;
     }
 
 `
@@ -77,6 +78,11 @@ export const Heading = styled.h1`
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 26px;
+        width: 80%;
     }
 `
 
