@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from 'react-router-dom'
 
 export const ServicesContainer = styled.div`
-    height: 1250px;
+    height: 1450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,8 +11,12 @@ export const ServicesContainer = styled.div`
     /* margin-bottom: -200px; */
     background-image: url("http://www.svmagnetics.com/templates/scottsvalleymagnetics/images/magnetic-field-bg.jpg");
 
+    @media screen and (max-width: 1000px){
+        height: 2200px;
+    }
+
     @media screen and (max-width: 768px){
-        height: 3000px;
+        height: 2600px;
     }
 
     @media screen and (max-width: 480px){

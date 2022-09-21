@@ -25,7 +25,7 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={MagneticBg} type='video/mp4' />
         </HeroBg>
         <ServicesContainer id='services'>
-        <div style={{color: 'white', fontSize: '24px', marginTop: '-300px'}}>
+        <div style={{color: 'white', fontSize: '24px', marginTop: '-300px', width: '66%', marginTop: 'auto'}}>
             Welcome to Scotts Valley Magnetics
         </div>
         <ServicesP>

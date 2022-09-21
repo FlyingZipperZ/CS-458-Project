@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 1000px;
+    height: 1100px;
     position: relative;
     z-index: 1;
     /* min-width: 300px;
@@ -31,7 +31,7 @@ export const HeroContainer = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        height: 1700px;
+        height: 2000px;
     }
 
 `
@@ -55,13 +55,12 @@ export const VideoBg = styled.video`
     background: #fff;
 
     @media screen and (max-width: 768px){
-        height: 1550px;
+        height: 1800px;
         
     }
 
     @media screen and (max-width: 480px){
-        height: 1600px;
-        
+        height: 2000px;
     }
 `
 
@@ -145,14 +144,7 @@ export const ServicesContainer = styled.div`
     align-items: center;
     position: relative;
     z-index: 2;
-
-    @media screen and (max-width: 768px){
-        height: 1100px;
-    }
-
-    @media screen and (max-width: 480px){
-        height: 1300px;
-    }
+    width: 166%;
 `
 
 export const ServicesWrapper = styled.div`
@@ -229,4 +221,6 @@ export const ServicesP = styled.p`
     margin-left: 66px;
     margin-right: 66px;
     width: 66%;
+    margin-bottom: 100px;
+    margin-top: 100px;
 `
