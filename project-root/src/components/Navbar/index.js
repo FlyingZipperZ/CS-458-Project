@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, CompanySlogan} from './NavbarElements'
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
+
 //import Login from '../auth/Login/Login'
 //import SignUp from '../auth/SignUp/SignUp'
 
