@@ -1,12 +1,6 @@
 import React from "react";
 import {
   ServicesContainer,
-  ServicesH1,
-  ServicesWrapper,
-  ServicesCard,
-  ServicesIcon,
-  ServicesH2,
-  ServicesP,
   BgContainer,
   BgImage,
   EmailForm,
@@ -14,7 +8,8 @@ import {
   CustomerName,
   SubmitEvent,
   CustomerEmail,
-  CustomerNameInput,
+  CustomerInput,
+  CustomerMessage,
 } from "./ContactUsElements";
 import testBg from "../../images/contactbkg.jpeg";
 
@@ -24,17 +19,25 @@ const ContactUs = () => {
       <EmailForm>
         <CustomerInfo>
           <CustomerName>First Name:</CustomerName>
-          <CustomerNameInput type="text" name="name" />
+          <CustomerInput type="text" name="fname" />
         </CustomerInfo>
         <CustomerInfo>
           <CustomerName>Last Name:</CustomerName>
-          <CustomerNameInput type="text" name="name" />
+          <CustomerInput type="text" name="lname" />
         </CustomerInfo>
         <CustomerInfo>
           <CustomerName>Email:</CustomerName>
-          <CustomerEmail type="text" name="name" />
+          <CustomerEmail type="text" name="email" />
         </CustomerInfo>
-        <SubmitEvent type="submit" value="Submit" />
+        <CustomerInfo>
+          <CustomerName>Message:</CustomerName>
+        </CustomerInfo>
+        <CustomerInfo>
+          <CustomerMessage type="text" name="message" />
+        </CustomerInfo>
+        <CustomerInfo>
+          <SubmitEvent type="submit" value="Submit" />
+        </CustomerInfo>
       </EmailForm>
       <BgContainer>
         <BgImage src={testBg} type="image/jpg"></BgImage>
