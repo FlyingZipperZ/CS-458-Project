@@ -7,9 +7,10 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 0;
     /* background: #fffff0; */
     /* margin-bottom: -200px; */
-    background-image: url("http://www.svmagnetics.com/templates/scottsvalleymagnetics/images/magnetic-field-bg.jpg");
 
     @media screen and (max-width: 1200px){
         height: 2200px;
@@ -56,7 +57,7 @@ export const ServicesWrapper = styled.div`
 `
 
 export const ServicesCard = styled.div`
-    background: #fff;
+    background: #96b7e6;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -87,7 +88,6 @@ export const ServicesIcon = styled.video`
     -o-object-fit: cover; 
     object-fit: cover;
     background: #fff;
-
 
     @media screen and (max-width: 768px){
         width: 100%;
@@ -157,6 +157,7 @@ export const ElectroImageContainter = styled.div`
     flex-direction: column;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
     cursor: pointer;
 
     @media screen and (max-width: 768px){
@@ -166,7 +167,7 @@ export const ElectroImageContainter = styled.div`
 `
 
 export const ElectroImage = styled.img`
-    height: 75px;
+    height: 100px;
     width: 133px;
     margin-bottom: 16px;
     /* margin: 9px; */
@@ -184,11 +185,38 @@ export const OurEquipment = styled.ul`
     list-style-position: top;
 
 `
-
-
-export const EquipmentItem = styled.li`
-    
-    margin-top: -5px;
+export const OurFacilty = styled.ul`
+    display: table;
+    gap: 00px;
+    margin: 0 auto;
+    list-style-position: inside;
 
 `
 
+export const EquipmentItem = styled.li`
+    margin-top: -5px;
+`
+
+export const FaciltySpace = styled.li`
+    margin-top: -5px;
+`
+
+export const BgContainer = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -999;
+`
+
+export const BgImage = styled.img`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover; 
+    object-fit: cover;
+    background: #fff;
+`

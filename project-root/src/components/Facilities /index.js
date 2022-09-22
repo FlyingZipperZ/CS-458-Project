@@ -12,22 +12,28 @@ import {
     ElectroImageContainter,
     ElectroImage,
     OurEquipment,
-EquipmentItem
+    EquipmentItem,
+    OurFacilty,
+    FaciltySpace, 
+    BgContainer,
+    BgImage
 } from './FacilitiesElements'
-import Icon1 from '../../images/penny.png'
-import Icon3 from '../../images/magnetics-hero.png'
-import widget1 from '../../images/widget1.jpg'
-import widget2 from '../../images/widget2.jpg'
-import widget3 from '../../images/widget3.jpg'
-import widget4 from '../../images/widget4.jpg'
-import widget5 from '../../images/widget5.jpg'
-import widget6 from '../../images/widget6.jpg'
-import widget7 from '../../images/widget7.jpg'
-import widget8 from '../../images/widget8.jpg'
+import widget1 from '../../images/facilitiesImage1.jpg'
+import widget2 from '../../images/facilitiesImage2.jpg'
+import widget3 from '../../images/facilitiesImage3.jpg'
+import widget4 from '../../images/facilitiesImage4.jpg'
+import widget5 from '../../images/facilitiesImage5.jpg'
+import widget6 from '../../images/facilitiesImage6.jpg'
 import video1 from '../../videos/toroid-winder.mp4'
+import video2 from '../../videos/cable-stripping.mp4'
+import assemblyFloor from '../../images/assembly-floor-bg.jpg'
 
 const Facilities = () => {
-  return (<ServicesContainer id='facilities'>
+  return (
+  <ServicesContainer id='facilities'>
+  <BgContainer>
+    <BgImage src={assemblyFloor}/>
+  </BgContainer>
   <ServicesH1>
       Facilities
   </ServicesH1>
@@ -46,7 +52,7 @@ const Facilities = () => {
             <OurEquipment> 
                 <EquipmentItem/> Coil winding machines, toroid, and bobbin types
                 <EquipmentItem/> Convection ovens
-                <EquipmentItem/> Vacuum ovens
+                <EquipmentItem/>. Vacuum ovens
                 <EquipmentItem />Vacuum impregnation system
                 <EquipmentItem />Solder & wire stripping system
                 <EquipmentItem />Fixture/prototype shop, lath, mill, drill press
@@ -75,13 +81,18 @@ const Facilities = () => {
           Our plant is located just minutes from the heart of Silicon Valley. 
           Engineering and manufacturing are located in the same facility. 
           We feel this provides an important interface link between the sales, production and technical staff.
-          15,000 sq. feet facility
-          10,000 sq. feet is ESD protected
+           <br/>
+           <br/>
+           • 15,000 sq. feet facility
+           <br/>
+           • 10,000 sq. feet is ESD protected
+          
           </ServicesP>
           <ServicesIcon autoPlay loop muted src={video1} type='video/mp4'/>
+          <br/>
+          <ServicesIcon autoPlay loop muted src={video2} type='video/mp4'/>
       </ServicesCard>
       <ServicesCard>
-          <ServicesIcon src={Icon3} style={{ height: '300px', width: '300px' }} />
           <ElectroImageContainter>
               <ElectroImage src={widget1}></ElectroImage>
               <ElectroImage src={widget2}></ElectroImage>
@@ -89,8 +100,6 @@ const Facilities = () => {
               <ElectroImage src={widget4}></ElectroImage>
               <ElectroImage src={widget5}></ElectroImage>
               <ElectroImage src={widget6}></ElectroImage>
-              <ElectroImage src={widget7}></ElectroImage>
-              <ElectroImage src={widget8}></ElectroImage>
           </ElectroImageContainter>
       </ServicesCard>
   </ServicesWrapper>
