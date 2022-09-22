@@ -28,9 +28,6 @@ const Navbar = ({toggle}) => {
 
     return (
     <>
-    <CompanySlogan>
-        A Heritage of Solving Problems Others Couldn't.
-    </CompanySlogan>
     <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>

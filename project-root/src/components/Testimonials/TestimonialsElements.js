@@ -76,6 +76,7 @@ export const ServicesH1 = styled.h1`
     margin-bottom: 30px;
     z-index: 1;
     padding: 50px 50px 50px 50px;
+    padding-bottom: 350px;
     border-radius: 33px;
     
 
