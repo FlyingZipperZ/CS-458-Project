@@ -16,11 +16,14 @@ import testBg from "../../images/contactbkg.jpeg";
 class ContactUs extends React.Component {
   constructor(props) {
     super(props);
+
+    // Set up values to be able to take in data from website
     this.state = { value: "" };
     this.state = { value1: "" };
     this.state = { value2: "" };
     this.state = { value3: "" };
 
+    // Sets up finctions with events inside the web page
     this.handleChangeFirst = this.handleChangeFirst.bind(this);
     this.handleChangeLast = this.handleChangeLast.bind(this);
     this.handleChangeEmail = this.handleChangeEmail.bind(this);
@@ -28,6 +31,9 @@ class ContactUs extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  /*
+    handleChange* sets up the values after the submit event takes place
+  */
   handleChangeFirst(event) {
     this.setState({ value: event.target.value });
   }
@@ -61,7 +67,6 @@ class ContactUs extends React.Component {
     event.preventDefault();
   }
 
-  // const ContactUs = () => {
   render() {
     return (
       <ServicesContainer id="contact">
