@@ -84,6 +84,6 @@ export const CustomerMessage = styled.textarea`
 `;
 
 export const SubmitEvent = styled.input`
-  width: 100px;
+  width: 100%;
   height: 50px;
 `;
