@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ServicesContainer = styled.div`
+export const ContactContainer = styled.div`
   height: 850px;
   display: flex;
   flex-direction: column;
@@ -59,9 +59,6 @@ export const EmailForm = styled.form`
 
 export const CustomerInfo = styled.label`
   margin: 15px;
-`;
-
-export const CustomerName = styled.label`
   width: 50%;
   height: 25%;
 `;
@@ -87,3 +84,9 @@ export const SubmitEvent = styled.input`
   width: 100px;
   height: 50px;
 `;
+
+export const InputWrapper = styled.div`
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+`

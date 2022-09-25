@@ -1,49 +1,56 @@
-import React from "react";
-import {
-  ServicesContainer,
-  BgContainer,
+import React, { useState } from "react";
+import { ContactContainer, InputWrapperBgContainer,
   BgImage,
   EmailForm,
   CustomerInfo,
-  CustomerName,
-  SubmitEvent,
-  CustomerEmail,
   CustomerInput,
+  CustomerEmail,
   CustomerMessage,
-} from "./ContactUsElements";
-import testBg from "../../images/contactbkg.jpeg";
+  SubmitEvent,
+  InputWrapper } from "./ContactUsElements";
+
 
 const ContactUs = () => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:3000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
   return (
-    <ServicesContainer id="contact">
-      <EmailForm>
-        <CustomerInfo>
-          <CustomerName>First Name:</CustomerName>
-          <CustomerInput type="text" name="fname" />
-        </CustomerInfo>
-        <CustomerInfo>
-          <CustomerName>Last Name:</CustomerName>
-          <CustomerInput type="text" name="lname" />
-        </CustomerInfo>
-        <CustomerInfo>
-          <CustomerName>Email:</CustomerName>
-          <CustomerEmail type="text" name="email" />
-        </CustomerInfo>
-        <CustomerInfo>
-          <CustomerName>Message:</CustomerName>
-        </CustomerInfo>
-        <CustomerInfo>
-          <CustomerMessage type="text" name="message" />
-        </CustomerInfo>
-        <CustomerInfo>
-          <SubmitEvent type="submit" value="Submit" />
-        </CustomerInfo>
+    <ContactContainer>
+      <EmailForm onSubmit={handleSubmit}>
+        <InputWrapper>
+          <CustomerInfo htmlFor="name">Name:</CustomerInfo>
+          <CustomerInput type="text" id="name" required />
+        </InputWrapper>
+        <InputWrapper>
+          <CustomerInfo htmlFor="email">Email:</CustomerInfo>
+          <CustomerInput type="email" id="email" required />
+        </InputWrapper>
+        <InputWrapper>
+          <CustomerInfo htmlFor="message">Message:</CustomerInfo>
+          <CustomerMessage id="message" required />
+        </InputWrapper>
+        <button type="submit">{status}</button>
       </EmailForm>
-      <BgContainer>
-        <BgImage src={testBg} type="image/jpg"></BgImage>
-      </BgContainer>
-    </ServicesContainer>
-  );
+    </ContactContainer>
+  )
 };
 
 export default ContactUs;
