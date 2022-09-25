@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import { ContactContainer, InputWrapperBgContainer,
+import { ContactContainer,
   BgImage,
   EmailForm,
   CustomerInfo,
   CustomerInput,
-  CustomerEmail,
   CustomerMessage,
   SubmitEvent,
+  BgContainer,
   InputWrapper } from "./ContactUsElements";
+
+  import testBg from '../../images/contactbkg.jpeg'
 
 
 const ContactUs = () => {
@@ -49,6 +51,9 @@ const ContactUs = () => {
         </InputWrapper>
         <button type="submit">{status}</button>
       </EmailForm>
+      <BgContainer>
+        <BgImage src={testBg} type="image/jpg"></BgImage>
+      </BgContainer>
     </ContactContainer>
   )
 };
