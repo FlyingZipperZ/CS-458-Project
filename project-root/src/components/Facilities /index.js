@@ -45,7 +45,7 @@ const Facilities = () => {
           <ServicesDiv>
           <ServicesP style={{textAlign: 'left'}}>
           Our resources enable us to manage the entire design to production cycle, from prototype runs to full turnkey production contracts. 
-          We maintain long-term contracts with our suppliers to reduce cost for our customers.
+          We maintain long-term contracts with our suppliers to reduce cost for our customers.</ServicesP>
             <br />
             <br />Our equipment includes:
            
@@ -69,8 +69,6 @@ const Facilities = () => {
                 <EquipmentItem />Delivery 3/4 ton van, and 1/2 ton utility vehicle
                 <EquipmentItem />Ultrasonic peg bonder, microprocessor control, and motorized Z-Axis
             </OurEquipment>
-            
-          </ServicesP>
           </ServicesDiv>
       </ServicesCard>
       <ServicesCard>

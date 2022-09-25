@@ -26,7 +26,7 @@ export const HeroContainer = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        height: 1750px;
+        height: 1950px;
         
     }
 
@@ -55,12 +55,12 @@ export const VideoBg = styled.video`
     background: #fff;
 
     @media screen and (max-width: 768px){
-        height: 1800px;
+        height: 100%;
         
     }
 
     @media screen and (max-width: 480px){
-        height: 2000px;
+        height: 100%;
     }
 `
 

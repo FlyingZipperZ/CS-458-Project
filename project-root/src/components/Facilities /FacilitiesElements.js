@@ -21,7 +21,7 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        height: 2600px;
+        height: 2800px;
     }
 
     @media screen and (max-width: 480px){
@@ -114,7 +114,7 @@ export const ServicesH2 = styled.h2`
 
 export const ServicesDiv = styled.div`
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -178,23 +178,23 @@ export const ElectroImage = styled.img`
 `
 
 
-export const OurEquipment = styled.ul`
-    display: table;
-    gap: 00px;
-    margin: 0 auto;
-    list-style-position: top;
+export const OurEquipment = styled.div`
+    /* display: inline-table; */
+    padding-left: 0;
+    margin-left : 1em;
+    list-style-position: inside;
+
 
 `
 export const OurFacilty = styled.ul`
-    display: table;
-    gap: 00px;
-    margin: 0 auto;
+    text-align: center;
     list-style-position: inside;
-
 `
 
-export const EquipmentItem = styled.li`
-    margin-top: -5px;
+export const EquipmentItem = styled.div`
+    display: list-item;
+    list-style-position: inside;
+    width: 100%;
 `
 
 export const FaciltySpace = styled.li`

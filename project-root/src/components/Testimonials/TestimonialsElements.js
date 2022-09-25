@@ -15,7 +15,7 @@ export const ServicesContainer = styled.div`
     }
     
     @media screen and (max-width: 768px){
-        height: 1550px;
+        height: 1750px;
     }
 
     @media screen and (max-width: 480px){
@@ -31,7 +31,7 @@ export const ServicesWrapper = styled.div`
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
-    margin-top: 66px;
+    /* margin-top: 66px; */
     z-index: 1;
 
     @media screen and (max-width: 1000px) {
