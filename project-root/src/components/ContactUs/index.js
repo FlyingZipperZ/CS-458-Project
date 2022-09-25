@@ -33,7 +33,7 @@ const ContactUs = () => {
     alert(result.status);
   };
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <EmailForm onSubmit={handleSubmit}>
         <InputWrapper>
           <CustomerInfo htmlFor="name">Name:</CustomerInfo>
@@ -45,7 +45,7 @@ const ContactUs = () => {
         </InputWrapper>
         <InputWrapper>
           <CustomerInfo htmlFor="message">Message:</CustomerInfo>
-          <CustomerMessage id="message" required />
+          <CustomerMessage type="message" id="message" required />
         </InputWrapper>
         <button type="submit">{status}</button>
       </EmailForm>
