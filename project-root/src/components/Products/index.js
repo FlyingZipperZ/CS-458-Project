@@ -23,6 +23,7 @@ import widget5 from '../../images/widget5.jpg'
 import widget6 from '../../images/widget6.jpg'
 import widget7 from '../../images/widget7.jpg'
 import widget8 from '../../images/widget8.jpg'
+import ProductsNavbar from './ProductsNavbar'
 
 const services = () => {
   return (
@@ -42,28 +43,6 @@ const services = () => {
                     <ServicesLinks to='/coaxial-cables'>Coaxial Cables</ServicesLinks>
                     <ServicesLinks to='/nycoil-cable-assemblies'>Nycoil™ Cable Assemblies</ServicesLinks>
                 </ServicesDiv>
-            </ServicesCard>
-            <ServicesCard>
-                <ServicesH2>
-                    Magnetics
-                </ServicesH2>
-                <ServicesP style={{textAlign: 'left'}}>
-                    SVM offers a full range of services from design and prototype manufacturing, to full production for all types of magnetic components. From universal progressive-wound high-voltage transformers, to high-frequency resonators, SVM can provide the assembly to meet your requirements. Toroid inductors and transformers are our specialty, ranging from high-frequency output transformers to high-power filter inductors. Both thru-hole and surface mount designs are available.                
-                </ServicesP>
-                <ServicesIcon src={Icon2}/>
-            </ServicesCard>
-            <ServicesCard>
-                <ServicesIcon src={Icon3} style={{ height: '300px', width: '300px' }} />
-                <ElectroImageContainter>
-                    <ElectroImage src={widget1}></ElectroImage>
-                    <ElectroImage src={widget2}></ElectroImage>
-                    <ElectroImage src={widget3}></ElectroImage>
-                    <ElectroImage src={widget4}></ElectroImage>
-                    <ElectroImage src={widget5}></ElectroImage>
-                    <ElectroImage src={widget6}></ElectroImage>
-                    <ElectroImage src={widget7}></ElectroImage>
-                    <ElectroImage src={widget8}></ElectroImage>
-                </ElectroImageContainter>
             </ServicesCard>
         </ServicesWrapper>
     </ServicesContainer>

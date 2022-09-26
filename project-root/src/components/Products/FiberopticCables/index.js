@@ -17,11 +17,13 @@ import fiber1 from '../../../images/fiber1.jpg'
 import fiber2 from '../../../images/fiber2.jpg'
 import fiber3 from '../../../images/fiber3.jpg'
 import fiber4 from '../../../images/fiber4.jpg'
+import ProductsNavbar from '../ProductsNavbar'
 
 
 const FiberopticCables = () => {
   return (
     <ServicesContainer id='products'>
+        <ProductsNavbar />
         <ServicesH1>
             Fiber-Optic Cables
         </ServicesH1>

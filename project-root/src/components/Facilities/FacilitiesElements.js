@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from 'react-router-dom'
 
 export const ServicesContainer = styled.div`
-    height: 1650px;
+    height: 1300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,19 +13,19 @@ export const ServicesContainer = styled.div`
     /* margin-bottom: -200px; */
 
     @media screen and (max-width: 1200px){
-        height: 1800px;
+        height: 1400px;
     }
 
     @media screen and (max-width: 1000px){
-        height: 2000px;
+        height: 1700px;
     }
 
     @media screen and (max-width: 768px){
-        height: 2700px;
+        height: 2300px;
     }
 
     @media screen and (max-width: 480px){
-        height: 2700px;
+        height: 2300px;
         align-items: center;
         justify-content: center;
 
@@ -183,7 +183,8 @@ export const OurFacilty = styled.ul`
 `
 
 export const EquipmentItem = styled.div`
-    display: list-item;
+    display: grid;
+    grid-template-columns: 1fr;
     list-style-position: inside;
     width: 100%;
 `

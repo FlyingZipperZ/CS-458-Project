@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { Link as LinkR } from 'react-router-dom'
 
 export const ServicesContainer = styled.div`
-    height: 1320px;
+    height: 1250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* background: #fffff0; */
     /* margin-bottom: -200px; */
     background-image: url("http://www.svmagnetics.com/templates/scottsvalleymagnetics/images/magnetic-field-bg.jpg");
@@ -16,7 +17,7 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 1000px){
-        height: 2200px;
+        height: 2500px;
     }
 
     @media screen and (max-width: 768px){
@@ -24,7 +25,7 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        height: 2100px;
+        height: 2450px;
     }
 `
 
@@ -35,6 +36,8 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
+    grid-gap: 16px;
+    padding: 0 50px;
     margin-bottom: 100px;
 
     @media screen and (max-width: 1000px) {
@@ -78,8 +81,6 @@ export const ServicesCard = styled.div`
     @media screen and (max-width: 480px){
         width: 80%;
     }
-
-
 `
 
 export const ServicesIcon = styled.img`

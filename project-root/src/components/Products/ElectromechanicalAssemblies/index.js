@@ -22,10 +22,12 @@ import ema3 from '../../../images/ema3.jpg'
 import ema4 from '../../../images/ema4.jpg'
 import ema5 from '../../../images/ema5.jpg'
 import ema6 from '../../../images/ema6.jpg'
+import ProductsNavbar from '../ProductsNavbar'
 
 const ElectromechanicalAssemblies = () => {
   return (
     <ServicesContainer id='products'>
+        <ProductsNavbar />
         <ServicesH1>
             Electro-Mechanical Assemblies
         </ServicesH1>

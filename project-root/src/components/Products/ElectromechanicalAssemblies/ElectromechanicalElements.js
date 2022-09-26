@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from 'react-router-dom'
 
 export const ServicesContainer = styled.div`
-    height: 1450px;
+    height: 1230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,15 +16,15 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 1000px){
-        height: 2200px;
+        height: 2100px;
     }
 
     @media screen and (max-width: 768px){
-        height: 2600px;
+        height: 2400px;
     }
 
     @media screen and (max-width: 480px){
-        height: 2800px;
+        height: 2350px;
     }
 `
 
@@ -35,6 +35,7 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
+    margin-bottom: 100px;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -75,7 +76,7 @@ export const ServicesCard = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        width: 50%;
+        width: 80%;
     }
 
 
@@ -141,6 +142,11 @@ export const ServicesLinks = styled(LinkR)`
     &:hover {
         background-color: white;
         color: #4169e1;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 50%;
+        margin-left: 15%;
     }
 `
 
