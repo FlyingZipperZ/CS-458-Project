@@ -5,7 +5,7 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-    background: #000;
+    background:  ${({scrollNav}) => (scrollNav ? 'black' : 'grey')};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -35,7 +35,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
+    color: ${({scrollNav}) => (scrollNav ? 'white' : 'white')};
     justify-self: flex-start;
     cursor: pointer;
     font-size: 2rem;
@@ -80,12 +80,14 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: ${({scrollNav}) => (scrollNav ? '#fff' : 'white')};
   display: flex;
   align-items: center;
   text-decoration: none; 
   padding: 0 1rem;
   height: 100%;
+  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
  
   &.active {

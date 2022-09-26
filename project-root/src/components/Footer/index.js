@@ -31,73 +31,13 @@ const Footer = () => {
                             About us
                         </FooterLinkTitle>
                             <FooterLink to='/signin'>
-                                How it works
+                            300 El Pueblo Road, Suite 107, Scotts Valley, CA 95066 USA
                             </FooterLink>
                             <FooterLink to='/signin'>
-                                Testimonials
+                            Phone:  831.438.3600
                             </FooterLink>
                             <FooterLink to='/signin'>
-                                Careers
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Meet the team
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Terms of Service
-                            </FooterLink>
-                    </FooterLinkItems>
-                </FooterLinksWrapper>
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>
-                            Contact Us
-                        </FooterLinkTitle>
-                            <FooterLink to='/signin'>
-                                Contact
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Support
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Destinations
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Sponsorships
-                            </FooterLink>
-                    </FooterLinkItems>
-                </FooterLinksWrapper>
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>
-                            Products
-                        </FooterLinkTitle>
-                            <FooterLink to='/signin'>
-                                Post
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Ambassadors
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Agency
-                            </FooterLink>
-                    </FooterLinkItems>
-                </FooterLinksWrapper>
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>
-                            Social Media
-                        </FooterLinkTitle>
-                            <FooterLink to='/signin'>
-                                Instagram
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Facebook
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Youtube
-                            </FooterLink>
-                            <FooterLink to='/signin'>
-                                Twitter
+                            scottsvalleymagnetics@gmail.com
                             </FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
@@ -108,25 +48,11 @@ const Footer = () => {
                         Scotts Valley Magnetics
                     </SocialLogo>
                     <WebsiteRights>
+                        PROUDLY MADE IN THE USA 
+                    </WebsiteRights>
+                    <WebsiteRights>
                         Scotts Valley Magnetics © {new Date().getFullYear()} All rights reserved.
                     </WebsiteRights>
-                    <SocialIcons>
-                        <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
-                            <FaInstagram />    
-                        </SocialIconLink>
-                        <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
-                            <FaFacebook />    
-                        </SocialIconLink>
-                        <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
-                            <FaYoutube />    
-                        </SocialIconLink>
-                        <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
-                            <FaTwitter />    
-                        </SocialIconLink>
-                        <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
-                            <FaLinkedin />    
-                        </SocialIconLink>
-                    </SocialIcons>
                 </SocialMediaWrap>
             </SocialMedia>
         </FooterWrap>

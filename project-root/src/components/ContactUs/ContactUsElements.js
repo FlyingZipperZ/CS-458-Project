@@ -9,6 +9,7 @@ export const ContactContainer = styled.div`
   background: #fff;
   position: relative;
   z-index: 0;
+  text-align: center;
 
   @media screen and (max-width: 1000px) {
     height: 700px;
@@ -46,7 +47,7 @@ export const BgImage = styled.img`
 export const EmailForm = styled.form`
   display: grid;
   grid-template-columns: auto;
-  position: sticky;
+  position: relative;
   background-color: white;
   padding: 1.5em;
   border-radius: 1em;
@@ -58,6 +59,7 @@ export const EmailForm = styled.form`
   height: auto;
   width: auto;
   color: black;
+  text-align: center;
 `;
 
 export const CustomerInfo = styled.label`
@@ -86,9 +88,16 @@ export const CustomerMessage = styled.textarea`
   color: black;
 `;
 
-export const SubmitEvent = styled.input`
-  width: 100px;
-  height: 50px;
+export const SubmitEvent = styled.button`
+  border: 1px solid white;
+  border-radius: 33px;
+  background-color: #4169e1;
+  height: 150%;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-left: 25%;
 `;
 
 export const InputWrapper = styled.div`

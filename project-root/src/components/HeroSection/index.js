@@ -26,14 +26,6 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={MagneticBg} type='video/mp4' />
         </HeroBg>
         <ServicesContainer id='home'>
-        
-            <h1>
-            <a href="" className="typewrite" data-period="2000" data-type='[ "Electronics Manufacturing With Intelligence.
-                    ", "A Heritage Of Solving Problems Others Could Not.", "We Have Solutions Looking For Problems.
-                    "]'>
-                <span className="wrap"></span>
-            </a>
-            </h1>
 
         <div style={{color: 'white', fontSize: '32px', marginTop: '-300px', width: '77%', marginTop: 'auto'}}>
             Welcome to Scotts Valley Magnetics

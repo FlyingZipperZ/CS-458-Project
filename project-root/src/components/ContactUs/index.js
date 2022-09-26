@@ -36,6 +36,7 @@ const ContactUs = () => {
   };
   return (
     <ContactContainer id="contact">
+      <h1 style={{color: 'white', marginBottom: '150px', fontSize: '38px', fontWeight: 'bold'}}>Contact Us</h1>
       <EmailForm onSubmit={handleSubmit}>
         <InputWrapper>
           <CustomerInfo htmlFor="name">Name:</CustomerInfo>
@@ -49,7 +50,7 @@ const ContactUs = () => {
           <CustomerInfo htmlFor="message">Message:</CustomerInfo>
           <CustomerMessage type="message" id="message" required />
         </InputWrapper>
-        <button type="submit">{status}</button>
+        <SubmitEvent type="submit">{status}</SubmitEvent>
       </EmailForm>
       <BgContainer>
         <BgImage src={testBg} type="image/jpg"></BgImage>

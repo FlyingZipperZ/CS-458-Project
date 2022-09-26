@@ -38,7 +38,7 @@ export const FooterLinksContainer = styled.div`
 `
 
 export const FooterLinksWrapper = styled.div`
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     width: 100%;
@@ -78,16 +78,11 @@ export const FooterLinkTitle = styled.h1`
 
 `
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.div`
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
-
-    &:hover{
-        color: #ff5349;
-        transition: 0.3s ease-out
-    }
 `
 
 export const SocialMedia = styled.div`

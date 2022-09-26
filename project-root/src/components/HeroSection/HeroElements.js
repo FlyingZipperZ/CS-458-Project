@@ -235,7 +235,7 @@ export const ServicesP = styled.p`
     margin-left: 66px;
     margin-right: 66px;
     width: 66%;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
     margin-top: 100px;
 
     @media screen and (max-width: 480px) {

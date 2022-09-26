@@ -32,7 +32,7 @@ const Navbar = ({toggle}) => {
     <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to='/' onClick={toggleHome}>
+                <NavLogo to='/' onClick={toggleHome} scrollNav={scrollNav}>
                     SVM
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -40,32 +40,32 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='products' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLinks scrollNav={scrollNav} to='products' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                             Products
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='testing' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLinks scrollNav={scrollNav} to='testing' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                             Testing
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='heritage' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLinks scrollNav={scrollNav} to='heritage' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                             Our Heritage
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='facilities' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLinks scrollNav={scrollNav} to='facilities' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                             Facilities
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='testimonials' smooth={true} duration={500} spy={true} offset={-80}>
+                        <NavLinks scrollNav={scrollNav} to='testimonials' smooth={true} duration={500} spy={true} offset={-80}>
                             Testimonials
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLinks scrollNav={scrollNav} to='contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                             Contact Us
                         </NavLinks>
                     </NavItem>

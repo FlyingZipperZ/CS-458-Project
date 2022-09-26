@@ -23,7 +23,7 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        height: 2050px;
+        height: 2250px;
     }
 `
 
@@ -98,12 +98,17 @@ export const ServicesH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
     color: #000;
+
+    @media screen and (max-width: 480px){
+        width: 130%;
+    }
 `
 
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
     color: #000;
+
 `
 
 export const BgContainer = styled.div`
