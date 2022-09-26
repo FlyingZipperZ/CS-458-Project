@@ -25,7 +25,7 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        height: 2650px;
+        height: 3000px;
         align-items: center;
         justify-content: center;
 
