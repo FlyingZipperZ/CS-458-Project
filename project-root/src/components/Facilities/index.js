@@ -86,9 +86,9 @@ const Facilities = () => {
            • 10,000 sq. feet is ESD protected
           
           </ServicesP>
-          <ServicesIcon autoPlay loop muted playsinline src={video1} type='video/mp4'/>
+          <ServicesIcon autoPlay loop muted src={video1} type='video/mp4' />
           <br/>
-          <ServicesIcon autoPlay loop muted playsinline src={video2} type='video/mp4'/>
+          <ServicesIcon autoPlay loop muted src={video2} type='video/mp4' />
       </ServicesCard>
       <ServicesCard>
           <ElectroImageContainter>
