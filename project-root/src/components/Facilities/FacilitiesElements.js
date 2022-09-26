@@ -13,19 +13,22 @@ export const ServicesContainer = styled.div`
     /* margin-bottom: -200px; */
 
     @media screen and (max-width: 1200px){
-        height: 2200px;
+        height: 1800px;
     }
 
     @media screen and (max-width: 1000px){
-        height: 2200px;
+        height: 2000px;
     }
 
     @media screen and (max-width: 768px){
-        height: 3000px;
+        height: 2300px;
     }
 
     @media screen and (max-width: 480px){
-        height: 3000px;
+        height: 2650px;
+        align-items: center;
+        justify-content: center;
+
     }
 `
 
@@ -39,6 +42,7 @@ export const ServicesWrapper = styled.div`
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
+        width: 80%;
     }
 
     @media screen and (max-width: 768px) {
@@ -50,8 +54,9 @@ export const ServicesWrapper = styled.div`
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 480px) {
         grid-template-columns: 1fr;
+        width: 100%;
     }
 
 `
@@ -120,7 +125,7 @@ export const ServicesDiv = styled.div`
     cursor: pointer;
 
     @media screen and (max-width: 480px){
-        width: 130%;
+        width: 100%;
     }
 `
 

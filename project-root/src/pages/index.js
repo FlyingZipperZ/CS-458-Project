@@ -7,7 +7,7 @@ import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data'
 import Testimonials from '../components/Testimonials'
 import Sidebar from '../components/Sidebar'
-import Facilities from '../components/Facilities '
+import Facilities from '../components/Facilities'
 import ContactUs from "../components/ContactUs";
 
 

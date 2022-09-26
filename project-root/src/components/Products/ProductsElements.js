@@ -16,7 +16,7 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 1000px){
-        height: 2200px;
+        height: 2500px;
     }
 
     @media screen and (max-width: 768px){
@@ -24,7 +24,7 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        height: 2800px;
+        height: 2600px;
     }
 `
 

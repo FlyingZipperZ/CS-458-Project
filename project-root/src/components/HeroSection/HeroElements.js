@@ -7,9 +7,9 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 1100px;
+    height: 1500px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     /* min-width: 300px;
     margin: auto; */
 
@@ -24,14 +24,14 @@ export const HeroContainer = styled.div`
         linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
     }
-
+    
     @media screen and (max-width: 768px){
-        height: 1950px;
+        height: 1800px;
         
     }
 
     @media screen and (max-width: 480px){
-        height: 2000px;
+        height: 2100px;
     }
 
 `
@@ -212,7 +212,7 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 64px;
+    /* margin-bottom: 64px; */
    
     padding: 50px 50px 50px 50px;
     border-radius: 33px;
@@ -235,7 +235,7 @@ export const ServicesP = styled.p`
     margin-left: 66px;
     margin-right: 66px;
     width: 66%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     margin-top: 100px;
 
     @media screen and (max-width: 480px) {
