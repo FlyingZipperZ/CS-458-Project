@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { FaBars } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, CompanySlogan} from './NavbarElements'
+import { CoLogo ,Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, CompanySlogan} from './NavbarElements'
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
+import logo from '../../images/svm-logo.png'
 
 //import Login from '../auth/Login/Login'
 //import SignUp from '../auth/SignUp/SignUp'
@@ -33,7 +34,7 @@ const Navbar = ({toggle}) => {
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                 <NavLogo to='/' onClick={toggleHome} scrollNav={scrollNav}>
-                    SVM
+                    <CoLogo src={logo}/>
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />

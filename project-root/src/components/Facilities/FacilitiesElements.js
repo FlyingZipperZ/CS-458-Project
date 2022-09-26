@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from 'react-router-dom'
 
 export const ServicesContainer = styled.div`
-    height: 1450px;
+    height: 1650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,11 +21,11 @@ export const ServicesContainer = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        height: 2300px;
+        height: 2700px;
     }
 
     @media screen and (max-width: 480px){
-        height: 3000px;
+        height: 2700px;
         align-items: center;
         justify-content: center;
 
@@ -39,25 +39,16 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
+    padding: 0 50px;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
-        width: 80%;
     }
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
         padding: 0 20px;
     } 
-
-    @media screen and (max-width: 1200px) {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @media screen and (max-width: 480px) {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
 
 `
 
@@ -80,11 +71,6 @@ export const ServicesCard = styled.div`
         cursor: pointer;
     }
 
-    @media screen and (max-width: 480px){
-        width: 50%;
-    }
-
-
 `
 
 export const ServicesIcon = styled.video`
@@ -94,9 +80,9 @@ export const ServicesIcon = styled.video`
     object-fit: cover;
     background: #fff;
 
-    @media screen and (max-width: 768px){
+    /* @media screen and (max-width: 768px){
         width: 100%;
-    }
+    } */
 ` 
 
 export const ServicesH1 = styled.h1`
@@ -115,6 +101,11 @@ export const ServicesH1 = styled.h1`
 export const ServicesH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (max-width: 480px){
+        width: 130%;
+    }
 `
 
 export const ServicesDiv = styled.div`
@@ -175,11 +166,6 @@ export const ElectroImage = styled.img`
     height: 100px;
     width: 133px;
     margin-bottom: 16px;
-    /* margin: 9px; */
-
-    @media screen and (max-width: 768px){
-        width: 100%;
-    }
 `
 
 

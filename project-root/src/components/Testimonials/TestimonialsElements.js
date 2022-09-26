@@ -100,7 +100,7 @@ export const ServicesH2 = styled.h2`
     color: #000;
 
     @media screen and (max-width: 480px){
-        width: 130%;
+        width: 100%;
     }
 `
 

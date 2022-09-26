@@ -31,11 +31,17 @@ const HeroSection = () => {
             Welcome to Scotts Valley Magnetics
         </div>
         <ServicesP>
-                    Scotts Valley Magnetics (SVM) was founded in 1971 with the purpose of supplying the electronics industry with superior products at competitive prices. SVM has the highest regard for customer service and quality. To uphold our standards, SVM maintains a staff of electronic engineers who actively participate in all stages of product design and assembly.
+                    <p>
+                        Scotts Valley Magnetics (SVM) was founded in 1971 with the purpose of supplying the electronics industry with superior products at competitive prices. SVM has the highest regard for customer service and quality. To uphold our standards, SVM maintains a staff of electronic engineers who actively participate in all stages of product design and assembly.
+                    </p>
 
-                    Our 15,000 Sq. Ft. facility, just minutes from the heart of Silicon Valley, provides both engineering and manufacturing at the same location. This establishes that all-important interface link between the sales, production, and technical staff.
-
-                    Our technical and manufacturing staff, together with state-of-the-art test facilities, enables SVM to respond quickly and effectively to customer requirements. A corporate commitment to customer service and implementation of Just-In-Time (JIT) philosophies ensure timely deliveries to customer-required schedules.
+                    <p>
+                        Our 15,000 Sq. Ft. facility, just minutes from the heart of Silicon Valley, provides both engineering and manufacturing at the same location. This establishes that all-important interface link between the sales, production, and technical staff.
+                    </p>
+                    
+                    <p>
+                        Our technical and manufacturing staff, together with state-of-the-art test facilities, enables SVM to respond quickly and effectively to customer requirements. A corporate commitment to customer service and implementation of Just-In-Time (JIT) philosophies ensure timely deliveries to customer-required schedules.
+                    </p>
         </ServicesP>
         <ServicesWrapper>
             <ServicesCard>

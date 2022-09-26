@@ -89,9 +89,13 @@ export const NavLinks = styled(LinkS)`
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
  
   &.active {
       border-bottom: 6px solid #4169e1;
+      top: -5px;
   }
 
   &:hover {
@@ -137,4 +141,8 @@ export const CompanySlogan = styled.div`
   min-width: 300px;
   margin: auto;
   color: white;
+`
+export const CoLogo = styled.img`
+  height: 100%;
+  width: 100%;
 `

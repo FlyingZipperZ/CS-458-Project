@@ -7,6 +7,7 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* background: #fffff0; */
     /* margin-bottom: -200px; */
     background-image: url("http://www.svmagnetics.com/templates/scottsvalleymagnetics/images/magnetic-field-bg.jpg");
@@ -35,6 +36,8 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
+    grid-gap: 16px;
+    padding: 0 50px;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -72,10 +75,6 @@ export const ServicesCard = styled.div`
         transform: scale(1.1);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
-    }
-
-    @media screen and (max-width: 480px){
-        width: 50%;
     }
 
 
@@ -141,6 +140,11 @@ export const ServicesLinks = styled(LinkR)`
     &:hover {
         background-color: white;
         color: #4169e1;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 50%;
+        margin-left: 15%;
     }
 `
 
