@@ -57,6 +57,7 @@ export const EmailForm = styled.form`
   background-color: lightgray;
   height: auto;
   width: auto;
+  color: black;
 `;
 
 export const CustomerInfo = styled.label`
@@ -70,6 +71,7 @@ export const CustomerInput = styled.input`
   height: 25px;
   font-size: 20px;
   margin-bottom: 12px;
+  color: black;
 `;
 
 export const CustomerEmail = styled.input`
@@ -81,6 +83,7 @@ export const CustomerMessage = styled.textarea`
   width: 100%;
   height: 60px;
   margin-bottom: 20px;
+  color: black;
 `;
 
 export const SubmitEvent = styled.input`
