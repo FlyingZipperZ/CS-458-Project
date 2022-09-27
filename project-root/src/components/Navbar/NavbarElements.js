@@ -145,4 +145,9 @@ export const CompanySlogan = styled.div`
 export const CoLogo = styled.img`
   height: 100%;
   width: 100%;
+
+  @media screen and (max-width: 480px){
+    width: 50%;
+    height: 50%;
+  }
 `
