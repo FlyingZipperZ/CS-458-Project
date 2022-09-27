@@ -74,7 +74,7 @@ const InfoSection = ({img, id, topLine, headLine, description, alt, imgStart, bu
     <>
       <InfoContainer id={id}>
         <InfoBg>
-          <ImageBg src={testingBg} type='image/jpg'></ImageBg>
+          <ImageBg style={{backgroundSize: '100% 100%'}}src={testingBg} type='image/jpg'></ImageBg>
         </InfoBg>
         <InfoWrapper>
             <InfoRow imgStart={imgStart}>

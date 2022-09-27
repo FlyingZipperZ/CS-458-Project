@@ -1,0 +1,12 @@
+{
+  "name": "contactus",
+  "version": "1.0.0",
+  "description": "NodeMailer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Theodore Horvath",
+  "license": "DSB 3 Clause"
+}

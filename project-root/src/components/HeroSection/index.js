@@ -21,12 +21,11 @@ const HeroSection = () => {
     }
 
   return (
-    <HeroContainer id='home'>
+    <HeroContainer id='home' style={{backgroundSize: '100% 100%'}}>
         <HeroBg>
-            <VideoBg autoPlay loop muted src={MagneticBg} type='video/mp4' />
+                <VideoBg autoPlay loop muted src={MagneticBg} type='video/mp4' />
         </HeroBg>
         <ServicesContainer id='home'>
-
         <div style={{color: 'white', fontSize: '32px', marginTop: '-300px', width: '77%', marginTop: 'auto'}}>
             Welcome to Scotts Valley Magnetics
         </div>

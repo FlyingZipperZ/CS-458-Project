@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
+const ab = 'C:\Users\Teddy Horvath\Documents\react-apps\CS-458-Project\project-root\src\components\HeroSection\ab.jpg'
+
 export const HeroContainer = styled.div`
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,15 +54,6 @@ export const VideoBg = styled.video`
     -o-object-fit: cover; 
     object-fit: cover;
     background: #fff;
-
-    @media screen and (max-width: 768px){
-        height: 100%;
-        
-    }
-
-    @media screen and (max-width: 480px){
-        height: 100%;
-    }
 `
 
 export const HeroContent = styled.div`
